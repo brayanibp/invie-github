@@ -10,17 +10,20 @@
 		img {
 			max-width: 100%;
 			vertical-align: top;
+		}
+
+		img#respo {
 			display: none;
 		}
 
-		.respo {
-			max-width: 100%;
-			vertical-align: top;
-			align-content: center;
-			display: block;
+		@media screen and (max-width: 768px) {
+			img {
+				display: none;
+			}
+			img#responsive {
+				display: block;
+			}
 		}
-
-
 	</style>
 </head>
 <body>
@@ -29,6 +32,6 @@
 	<img src="acustica.jpg" alt="acustica">
 	<img src="clasica.jpg" alt="clasic">
 	<img src="footer.jpg" alt="footer">
-	<img class="respo" src="invie_responsive.png" alt="responsive">
+	<img id="responsive" src="invie_responsive.png" alt="responsive">
 </body>
 </html>
