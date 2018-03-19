@@ -307,10 +307,20 @@ table, th, td {
 	top: 20px;
 	cursor: pointer;
 	z-index: 3;
+	color: #FFF;
 }
 
 @media screen and (max-width: 820px) {
+	/*Precios*/
+	.tabla {
+		margin: 50px 20px;
+	}
 
+	.tabla .contenedor {
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/*Precios*/
 	/*Portada*/
 	.titulo {
 		font-size: 45px;
@@ -412,6 +422,9 @@ table, th, td {
 
 @media screen and (max-width: 500px) {
 	/*Portada*/
+	.header, .header .contenedor {
+		position: static;
+	}
 	.burguer-button {
 		display: inline-block;
 	}
@@ -470,4 +483,23 @@ table, th, td {
 		font-size: 30px;
 	}
 	/*Guitarras*/
+}
+
+video {
+	width: 100%;
+}
+
+.video-responsive-contenedor {
+	position: relative;
+	padding-top: 56.4%;
+}
+
+.video-responsive-src {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	width: 100%;
 }
