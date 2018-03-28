@@ -280,7 +280,7 @@ table, th, td {
 }
 
 .menu li:before {
-	content: 'o';
+	content: '';
 	font-size: 14px;
 	line-height: 20px;
 	color: #fff;
